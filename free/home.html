@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Affluence - Exclusive Access</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">    
+  </head>
+
+  <body>
+    
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">Affluence</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="./home.html">Home</a></li>
+              <li><a href="./events.html">Events</a></li>
+              <li><a href="./offers.html">Offers</a></li>
+              <li><a href="./gives.html">Gives</a></li>
+            </ul>  
+                       
+            <ul class="nav pull-right">
+            	
+	            <li class="dropdown" id="menu1">
+	              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">Account <b class="caret"></b></a>
+	              
+	              <ul class="dropdown-menu">
+	                <li><a href="../settings.html">Settings</a></li>
+	                <li><a href="../privacy.html">Privacy</a></li>
+	                <li><a href="../orders.html">Order History</a></li>
+	                <li class="divider"></li>
+	                <li><a href="#">Sign Out</a></li>
+	              </ul>
+	              
+	            </li>
+         	 </ul>
+            
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+
+   <div class="row">
+   	<div class="span3">
+   		<div>
+   			<img src="https://lh4.googleusercontent.com/-YswsvHLdvIk/ThsHAMib6ZI/AAAAAAAAAaQ/_DLti6gsbXc/s387/263890_10150248122814633_591424632_7344455_539665_n.jpg">
+   		</div>
+   		
+   		<div class="well">
+    		<ul class="nav nav-list">
+    			<li class="nav-header">Socialize</li>
+    			<hr class="zero">
+    			<li class="active">
+    				<a href="./home.html"><i class="icon-star"></i>What's New</a>
+    			</li>
+    			<li>
+    				<a href="./profile.html"><i class="icon-home"></i>Profile</a>
+    			</li>
+    			<li>
+    				<a href="./photos.html"><i class="icon-picture"></i>Photo Stream</a>
+    			</li>
+    			<li>
+    				<a href="./members.html"><i class="icon-user"></i>Members</a>
+    			</li>
+    			<li>
+    				<a href="./messages.html"><i class="icon-comment"></i>Messages <span class="label label-important">2</span></a>
+    			</li>
+    			<li>
+    				<a href="./concierge.html"><i class="icon-glass"></i>Concierge</a>
+    			</li>
+    			
+    			<li>
+    				<a href="./invite.html"><i class="icon-envelope"></i>Invites</a>
+    			</li>
+    		</ul>
+    	</div> <!-- side bar nav -->
+   		
+   		<div>
+	  		<form class="well">
+	  		<h3>Call Concierge</h3><hr class="zero">
+        	<input type="text" class="span2" placeholder="847-481-9989"> <span class="help-inline">Press Call and Your Phone will Ring</span>
+        	<button type="submit" class="btn btn-primary" data-toggle="modal" href="#premium-sign-up">Call Concierge</button><br />
+      		</form>
+      		
+	     </div><!-- concierge -->
+   	
+   	</div><!-- span3 -->
+   
+   	<div class="span9">
+   		
+   		<div class="alert alert-block alert-error fade in">
+            <a class="close" data-dismiss="alert" href="#">×</a>
+            <h4 class="alert-heading">You Email Address Needs to Be Verified</h4>
+            <p>Before you account can be fully activated, you must verify that <strong>blake.macleod@gmail.com</strong> is your email. You will receive an email from Affluence with a link to verify your address.</p>
+            <p>
+              <a class="btn btn-danger" href="#">Change Email Address</a> <a class="btn" href="#">Resend Verification Email</a>
+            </p>
+      	</div>
+          	
+   		<div id="new_members">
+   			<h2><small>new</small> Members</h2>
+   			<hr class="zero">
+	   			<ul class="thumbnails">
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcSYhnBvyrRrhumLTwSW7CLDFLVNY_ONEAHBFMdxc46bJLU8nuGLZw"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcSxBfHGvjZb68NVLOrTAqlXXdnGZUQrjcnndSd8w5qvMM1CX6taAw"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcSJXgIHrgms31dM7ZWyYIah0opjvvuccBCHoblNeN2v7hTre-hpQw"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcSdhiqivyBt7osZ9wW9WmML47uveFdWfhKe-Y-jwo1pEfbbT3WK"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQ821DgmCba9tROpeuz1GibDBWgS-i_yS3OruOHG0JfS5u_Sj-iMg"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcToyZ2iwLHPYahed5W-PNFcXODYN-dGat4ePxvhO9LzJFre_xlQtA"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcRUhc1qqnWm_6kfleQeKaL2S-t2IWNizfVwpYEOz5eRJs0c7O8CQg"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcQ-WrSU2rLrvm946oEf3nxuVX1-lT3woMJb6gmCNYL2xNsDwaK2"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcQ4_Q79FCLh8PDYT-AmPVkuEI9QZZaupzBGktoKyyl3aFaPcBBl"></a>
+	   				</li>
+	   			</ul>
+	   			
+	   			<ul class="thumbnails">
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcREPwgTDHX276SGgwHiWB8Y8XDjxARr3BHQ6G2J6-yEYgatZ7okPQ"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcQ-WrSU2rLrvm946oEf3nxuVX1-lT3woMJb6gmCNYL2xNsDwaK2"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcT3r6FHdPBStGjBl6IN_3leIVfahplN50wOqRe1JJEZKn6Ub35R"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcSILxTUaRCkvpJ7uDUC0b0QiN7x8opnies61jspEvYfjfkyiHBtGw"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcTUu0QGzeZY6BqwMK-dDVjRWie5_CWlezd28wilI_ifFyAZSFFG"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcQZ38behKQIx4Y_jpzGorVAnqc3qbf7mAZ18npKk_YGZuMhgbC3"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcTZTFyp8-uWRk-XDK8FYBs8uJSdcwYFXLhnZpBodS4f_Nv07r2l"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcRbq_TUbTPfLyGdwIevehyfCy5Q9R8OKZPAZ9tMJSSW78Q3-Yq1cA"></a>
+	   				</li>
+	   				<li class="span1">
+	   					<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcQgNEEWz1vuRQaK3e4WbkCC4fG9rPJRzaIXj_W6sTlHGB6noAI-"></a>
+	   				</li>
+	   			</ul>
+	   			
+	   			<p class="pull-right"><a href="./members.html">see more members</a></p><br /><br />
+   		</div> <!-- new_members -->
+   		
+   		<div id="events">
+   			<h2><small>new</small> Events</h2>
+   			<hr class="zero">
+   			<ul class="thumbnails">
+	   				<li class="span3">
+			          <div class="thumbnail">
+			            <img src="../img/events-1.jpg" alt="">
+			            <div class="caption">
+			              <h5>Grammy Event & Party</h5>
+			              <p>Join Affluence for an all access pass to the 2012 Grammy's. Walk the red carpet, enjoy the show and party the night away at the exclusive after hours party at the W.</p>
+			              <p>$1,800 <br /><i class="icon-tag"></i>7 Tickets Remain</p>
+              			  <p><a class="btn btn-success" data-toggle="modal" href="#premium-sign-up"><i class="icon-pencil icon-white"></i> Register</a> <a class="btn btn-small btn-info" href="./events-detail.html"><i class="icon-info-sign icon-white"></i> More Info</a></p>
+			            </div>
+			          </div>
+			        </li>
+	   				<li class="span3">
+			          <div class="thumbnail">
+			            <img src="../img/events-2.jpg" alt="">
+			            <div class="caption">
+			              <h5>Weekend at the Masters</h5>
+			              <p>Let Affluence treat you to a Masters like you have never experienced before. Enjoy Saturday and Sunday event passes with all access to every tent and party.</p>
+			             <p>$1,800 <br /><i class="icon-tag"></i>7 Tickets Remain</p>
+              			  <p><a class="btn btn-success" href="#"><i class="icon-pencil icon-white"></i> Register</a> <a class="btn btn-small btn-info" href="./events-detail.html"><i class="icon-info-sign icon-white"></i> More Info</a></p>
+			            </div>
+			          </div>
+			        </li>
+	   				<li class="span3">
+			          <div class="thumbnail">
+			            <img src="../img/events-3.jpg" alt="">
+			            <div class="caption">
+			              <h5>2012 Oscars Party</h5>
+			              <p>Join Affluence for an all access pass to the 2012 Grammy's. Walk the red carpet, enjoy the show and party the night away at the exclusive after hours party at the W.</p>
+			              <p>$1,800 <br /><i class="icon-tag"></i>7 Tickets Remain</p>
+              			  <p><a class="btn btn-success" href="#"><i class="icon-pencil icon-white"></i> Register</a> <a class="btn btn-small btn-info" href="./events-detail.html"><i class="icon-info-sign icon-white"></i> More Info</a></p>
+			            </div>
+			          </div>
+			        </li>
+	   			</ul>
+	   			<p class="pull-right"><a href="./events.html">see more events</a></p><br /><br />
+   		</div> <!-- events -->
+   		
+   		<div id="offers">
+   			<h2><small>new</small> Offers</h2>
+   			<hr class="zero">
+   			<ul class="thumbnails">
+	   				<li class="span3">
+			          <div class="thumbnail">
+			            <img src="../img/offer-1.jpg" alt="">
+			            <div class="caption">
+			              <h5>60% Off Flying Private</h5>
+			              <p>Fly private for as little as $3,000/hr.</p>
+              			  <p><a class="btn btn-small btn-info" data-toggle="modal" href="#premium-sign-up"><i class="icon-ok icon-white"></i> Ativate</a></p>
+			            </div>
+			          </div>
+			        </li>
+	   				<li class="span3">
+			          <div class="thumbnail">
+			            <img src="../img/offer-2.jpg" alt="">
+			            <div class="caption">
+			              <h5>Small Luxury Hotel Upgrades</h5>
+			              <p>Free room upgrade, late checkout & more.</p>
+              			  <p><a class="btn btn-small btn-info" href="#"><i class="icon-ok icon-white"></i> Ativate</a></p>
+			            </div>
+			          </div>
+			        </li>
+	   				<li class="span3">
+			          <div class="thumbnail">
+			            <img src="../img/offer-3.jpg" alt="">
+			            <div class="caption">
+			              <h5>30% Off Lifelock</h5>
+			              <p>Protect your identity for less than $7 a month.</p>
+              			  <p><a class="btn btn-small btn-info" data-toggle="modal" href="#premium-sign-up"><i class="icon-ok icon-white"></i> Ativate</a></p>
+			            </div>
+			          </div>
+			        </li>
+	   			</ul>
+	   			<p class="pull-right"><a href="./offers.html">see more offers</a></p><br /><br />
+   		</div> <!-- offers -->
+   		
+   		<div id="activity">
+   			<div class="row zero-row">
+   				<div class="span5">
+   					<h2>Activity</h2>
+   				</div>
+   				<div class="span4">
+	   				<div class="btn-group pull-right" data-toggle="buttons-radio">
+	                    <button class="btn btn-small btn-primary active">Entire Network</button>
+	                    <button class="btn btn-small btn-primary">my Connections</button>
+	                </div>
+                </div>
+   			</div>
+   			
+   			<hr class="zero">
+   			
+   			<table class="table table-striped">
+   				<tr>
+   					<td class="span1">
+   						<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcToyZ2iwLHPYahed5W-PNFcXODYN-dGat4ePxvhO9LzJFre_xlQtA"></a>
+   					</td>
+   					<td>
+   						<h5>John Doe</h5>
+   						<p>has activated the <a href="./offer-1.html">Lifelock</a> Offer</p>
+   					</td>
+   				</tr>
+   				
+   				<tr>
+   					<td class="span1">
+   						<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcToyZ2iwLHPYahed5W-PNFcXODYN-dGat4ePxvhO9LzJFre_xlQtA"></a>
+   					</td>
+   					<td>
+   						<h5>Michael Smith</h5>
+   						<p>has purchased a ticket to the <a href="./events-1.html">Grammy Event & Party</a> Event</p>
+   					</td>
+   				</tr>
+   				
+   				<tr>
+   					<td class="span1">
+   						<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcToyZ2iwLHPYahed5W-PNFcXODYN-dGat4ePxvhO9LzJFre_xlQtA"></a>
+   					</td>
+   					<td>
+   						<h5>Chris Morris</h5>
+   						<p>has used <a href="./events-1.html">Affluence Concierge</a></p>
+   					</td>
+   				</tr>
+   				
+   				<tr>
+   					<td class="span1">
+   						<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcToyZ2iwLHPYahed5W-PNFcXODYN-dGat4ePxvhO9LzJFre_xlQtA"></a>
+   					</td>
+   					<td>
+   						<h5>Doug Lowe</h5>
+   						<p>has donated to <a href="./events-1.html">Affluence Gives</a></p>
+   					</td>
+   				</tr>
+   				
+   				<tr>
+   					<td class="span1">
+   						<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcToyZ2iwLHPYahed5W-PNFcXODYN-dGat4ePxvhO9LzJFre_xlQtA"></a>
+   					</td>
+   					<td>
+   						<h5>Chris Morris</h5>
+   						<p>has used <a href="./events-1.html">Affluence Concierge</a></p>
+   					</td>
+   				</tr>
+   				
+   				<tr>
+   					<td class="span1">
+   						<a href"#" rel="tooltip" data-original-title="John Doe" data-placement="bottom" class="thumbnail"><img src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcToyZ2iwLHPYahed5W-PNFcXODYN-dGat4ePxvhO9LzJFre_xlQtA"></a>
+   					</td>
+   					<td>
+   						<h5>Doug Lowe</h5>
+   						<p>has donated to <a href="./events-1.html">Affluence Gives</a></p>
+   					</td>
+   				</tr>
+
+   			</table>
+   		</div> <!-- activity -->
+   		
+   		<div id="photos">
+   			<h2>Photo Stream</h2>
+   			<hr class="zero">
+   			
+   				<ul class="thumbnails">
+			        <li class="span3">
+			          <a href="#" class="thumbnail">
+			            <img src="http://placehold.it/260x180" alt="">
+			          </a>
+			        </li>
+			        <li class="span3">
+			          <a href="#" class="thumbnail">
+			            <img src="http://placehold.it/260x180" alt="">
+			          </a>
+			        </li>
+			        <li class="span3">
+			          <a href="#" class="thumbnail">
+			            <img src="http://placehold.it/260x180" alt="">
+			          </a>
+			        </li>
+			        <li class="span3">
+			          <a href="#" class="thumbnail">
+			            <img src="http://placehold.it/260x180" alt="">
+			          </a>
+			        </li>
+			        <li class="span3">
+			          <a href="#" class="thumbnail">
+			            <img src="http://placehold.it/260x180" alt="">
+			          </a>
+			        </li>
+			        <li class="span3">
+			          <a href="#" class="thumbnail">
+			            <img src="http://placehold.it/260x180" alt="">
+			          </a>
+			        </li>
+			    </ul>
+		     <p class="pull-right"><a href="./photos.html">see more photo's</a></p><br /><br />
+   		</div> <!-- photos -->
+   	
+   	</div><!-- span9 -->
+   	
+   </div>
+
+
+      <hr>
+
+<!-- Modals
+    ================================================== -->      
+   
+          
+          
+<!-- Register Modal -->
+<div id="premium-sign-up" class="modal hide fade" style="display: none; ">
+  <div class="modal-header well">
+    <a href="#" class="close" data-dismiss="modal">×</a>
+    <h2>Become a Premium Member</h2>
+    <p>Make Connections, Send Messages, Post Photo's, take advantage of <strong>Affluence Offerings</strong> and <strong>Affluence Events</strong> and use the <strong>Affluence Concierge</strong>.</p>
+  </div>
+  <div class="modal-body">
+   <form class="form-horizontal">
+   
+    <fieldset>
+      <div class="control-group">
+        <label class="control-label" for="input01">Name</label>
+        <div class="controls">
+          <input type="text" class="input-xlarge" id="input01" placeholder="Blake Macleod">
+        </div>
+      </div>
+      
+		<div class="control-group">
+			<label class="control-label">Plan</label>
+			<div class="controls">
+			  <label class="radio">
+			    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked="">
+			    Monthly - $50 per Month
+			  </label>
+			  <label class="radio">
+			    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2">
+			   Yearly - $450 per Year <em><strong>Save 25%</strong></em>
+			  </label>
+			</div>
+		</div>
+      
+      <hr class="zero">
+      <div class="control-group">
+        <label class="control-label" for="input04">Credit Card</label>
+        <div class="controls">
+          <input type="text" class="input-xlarge" id="input01">
+        </div>
+      </div>
+      
+      <div class="control-group">
+        <label class="control-label" for="input05">Exp.</label>
+        <div class="controls">
+          <select class="span2">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+          </select>
+          
+          <select class="span1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="control-group">
+        <label class="control-label" for="input06">Billing Zip</label>
+        <div class="controls">
+          <input type="text" class="input-xlarge span2" id="input06">
+        </div>
+      </div>
+      
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </div>
+    </fieldset>
+  </form>
+
+  </div>
+</div>     
+<!-- End Register Modal -->
+
+      <footer>
+        <p>&copy; Company 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+    
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <!-- javascript -->
+        
+    <script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
+    
+    <script>
+            $(function () {
+              $('a[rel=tooltip]').tooltip({
+              	live: true
+              })
+            })
+          </script>
+  
+     
+  </body>
+</html>
