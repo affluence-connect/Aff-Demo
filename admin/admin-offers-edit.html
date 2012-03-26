@@ -87,90 +87,57 @@
     		</div><!-- span3 -->
     		
     		<div class="span10">
-	    		<div class="row">
-		   			<div class="span5">
-		   				<h2>Offers</h2>
-		   			</div>
-		   			<div class="span5">
-		   				 <p class="pull-right"><a class="btn btn-primary btn-small" href="./admin-offers-new.html"><i class="icon-pencil icon-white"></i> New Offer</a></p>
-		   			</div>
+    			<h2>60% Off Flying Private</h2>
+    			<hr>
+	    		<form class="form-horizontal">
+			   				<fieldset>
+							    
+							    <div class="control-group">  
+						          <label class="control-label" for="input01">Offer Title</label>
+							      <div class="controls">
+							        <input type="text" class="input span4" placeholder="60% Off Flying Private">
+							      </div>
+							    </div>
+							    
+							    <div class="control-group">
+						            <label class="control-label" for="textarea">Event Description</label>
+						            <div class="controls">
+						              <textarea class="input span4" id="textarea" rows="4">Fly private for as little as $3,000/hr.</textarea>
+						            </div>
+						        </div>
+							    
+							    <div class="control-group">
+						           <label class="control-label" for="fileInput">Add Pictures</label>
+						            <div class="controls">
+						              <input class="input-file" id="fileInput" type="file">
+						            </div>
+						        </div>
+							    
+							    <div class="control-group">  
+						          <label class="control-label" for="input04">Link</label>
+							      <div class="controls">
+							        <input type="text" class="input span4" placeholder="http://www.sage-popovich.com">
+							      </div>
+							    </div>
+
+							     <div class="control-group">  
+						          <label class="control-label" for="input06">Active</label>
+							      <div class="btn-group controls" data-toggle="buttons-radio">
+									  <button class="btn active">Active</button>
+									  <button class="btn">Disabled</button>
+								   </div>
+							    </div>
+							    
+						        
+						        <div class="form-actions">
+						            <button type="submit" class="btn btn-primary">Update Offer</button>
+						        </div>
+						          
+							</fieldset>
+						</form>
 		   		</div><!-- row -->
-			     
-			     <table class="table table-striped">
-			     	<thead>
-					    <tr>
-					      <th>Offer</th>
-					      <th>Description</th>
-					      <th>Status</th>
-					      <th></th>
-					    </tr>
-					</thead>
-					<tbody>
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					</tbody>
-			     </table>
-			     
-			     <div class="pagination">
-					  <ul>
-					    <li><a href="#">Prev</a></li>
-					    <li class="active"><a href="#">1</a></li>
-					    <li><a href="#">2</a></li>
-					    <li><a href="#">3</a></li>
-					    <li><a href="#">4</a></li>
-					    <li class="disabled"><a href="#">...</a></li>
-					    <li><a href="#">109</a></li>
-					    <li><a href="#">110</a></li>
-					    <li><a href="#">Next</a></li>
-					  </ul>
-				  </div><!-- pagination -->
-    		
+		   		
+		   		
     		</div> <!-- span10 -->
     	</div> <!-- row -->
 
@@ -181,43 +148,6 @@
       <footer>
         <p>&copy; Company 2012</p>
       </footer>
-      
-<!-- Modals
-    ================================================== -->      
-    
-<!-- New Event Modal -->
-			<div id="new-event" class="modal hide fade" style="display: none; ">
-              <div class="modal-header">
-                <a href="#" class="close" data-dismiss="modal">×</a>
-                <h3>New Event</h3>
-              </div>
-              <div class="modal-body">
-               <form class="form-horizontal">
-               
-			        <fieldset>
-			          <div class="control-group">
-			            <label class="control-label" for="input01">To</label>
-			            <div class="controls">
-			              <input type="text" class="input-xlarge" id="input01" data-provide="typeahead" data-input="5" data-source="["Blake Macleod","Doug Stukel","Michael Profita"]">
-			            </div>
-			          </div>
-			         
-			          
-			         <div class="control-group">
-			         	<label class="control-label" for="textarea">Message</label>
-			         	<div class="controls">
-             				<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
-             			</div>
-           			 </div>
-			          
-			          <div class="form-actions">
-			            <button type="submit" class="btn btn-primary">Send</button>
-			          </div>
-			        </fieldset>
-			      </form>
-
-              </div>
-            </div>
 
     </div> <!-- /container -->
   

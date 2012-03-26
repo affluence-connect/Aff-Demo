@@ -76,10 +76,10 @@
 		    			<li>
 		    				<a href="./admin-members.html"><i class="icon-user"></i>Members</a>
 		    			</li>
-		    			<li>
+		    			<li class="active">
 		    				<a href="./admin-events.html"><i class="icon-asterisk"></i>Events</a>
 		    			</li>
-		    			<li class="active">
+		    			<li>
 		    				<a href="./admin-offers.html"><i class="icon-gift"></i>Offers</a>
 		    			</li>
 		    		</ul>	
@@ -87,90 +87,145 @@
     		</div><!-- span3 -->
     		
     		<div class="span10">
-	    		<div class="row">
-		   			<div class="span5">
-		   				<h2>Offers</h2>
-		   			</div>
-		   			<div class="span5">
-		   				 <p class="pull-right"><a class="btn btn-primary btn-small" href="./admin-offers-new.html"><i class="icon-pencil icon-white"></i> New Offer</a></p>
-		   			</div>
+    			<h2>Grammy Party</h2>
+    			<hr>
+	    		<form class="form-horizontal">
+			   				<fieldset>
+							    
+							    <div class="control-group">  
+						          <label class="control-label" for="input01">Event Title</label>
+							      <div class="controls">
+							        <input type="text" class="input span4" placeholder="Grammy Party">
+							      </div>
+							    </div>
+							    
+							    <div class="control-group">
+						            <label class="control-label" for="textarea">Event Description</label>
+						            <div class="controls">
+						              <textarea class="input span6" id="textarea" rows="8" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."></textarea>
+						            </div>
+						        </div>
+							    
+							    <div class="control-group">
+						           <label class="control-label" for="fileInput">Add Pictures</label>
+						            <div class="controls">
+						              <input class="input-file" id="fileInput" type="file">
+						            </div>
+						        </div>
+						        
+						        <div class="control-group">
+							      <label class="control-label" for="input02">Schedule</label>
+							      <div class="controls">
+							        <input type="text" class="input span2" placeholder="3/10/2012">
+							  		<input type="text" class="input span2" placeholder="11:00am">
+							  		<input type="text" class="input span2" placeholder="Check in at W Hotel">
+							  		
+							      </div>
+							    </div>
+							    
+							    <div class="control-group">
+							      <label class="control-label" for="input02"></label>
+							      <div class="controls">
+							        <input type="text" class="input span2" placeholder="3/10/2012">
+							  		<input type="text" class="input span2" placeholder="7:00pm">
+							  		<input type="text" class="input span2" placeholder="Limo to Pick you up at your hotel">
+							  		
+							      </div>
+							    </div>
+							    
+							    <div class="control-group">
+							      <label class="control-label" for="input02"></label>
+							      <div class="controls">
+							        <input type="text" class="input span2" placeholder="3/10/2012">
+							  		<input type="text" class="input span2" placeholder="7:30pm">
+							  		<input type="text" class="input span2" placeholder="Arrive at the Grammys - walk the red carpet">
+							  		<i class="icon-plus-sign"></i>
+							      </div>
+							    </div>
+							    
+							    
+							    
+							    <div class="control-group">
+							      <label class="control-label" for="input03">Includes</label>
+							      <div class="controls">
+							        <input type="text" class="input span4" placeholder="2 tickets to the Grammys">
+							  		
+							      </div>
+							    </div>
+							    
+							    <div class="control-group">
+							      <label class="control-label" for="input03"></label>
+							      <div class="controls">
+							        <input type="text" class="input span4" placeholder="2 night stay at W hotel">
+							  		
+							      </div>
+							    </div>
+							    
+							    <div class="control-group">
+							      <label class="control-label" for="input03"></label>
+							      <div class="controls">
+							        <input type="text" class="input span4" placeholder="Limo to and from Grammys">
+							  		<i class="icon-plus-sign"></i>
+							      </div>
+							    </div>
+							    
+							    <div class="control-group">  
+						          <label class="control-label" for="input04">Price</label>
+							      <div class="controls">
+							        <input type="text" class="input span2" placeholder="$1,800">
+							      </div>
+							    </div>
+							    
+							    <div class="control-group">  
+						          <label class="control-label" for="input05">Number of Tickets</label>
+							      <div class="controls">
+							        <input type="text" class="input span2" placeholder="12">
+							      </div>
+							    </div>
+							    
+							    <div class="control-group">  
+						          <label class="control-label" for="input05">Tickets Sold</label>
+						          <div class="controls">7</div>
+							    </div>
+							    
+							     <div class="control-group">  
+						          <label class="control-label" for="input06">Sale Ends</label>
+							      <div class="controls">
+							        <input type="text" class="input span2" placeholder="April 3, 2010">
+							      </div>
+							    </div>
+							    
+							    <div class="control-group">  
+						          <label class="control-label" for="input05">Members Attending</label>
+						          <div class="controls">
+						          	<ul class="unstyled">
+						          		<li>Bill Smith</li>
+						          		<li>Bob James</li>
+						          		<li>Bob Miller</li>
+						          		<li>Bob Jones</li>
+						          		<li>Chris James</li>
+						          		<li>Phil James</li>
+						          		<li>Bobby James</li>
+						          		<li>Bob James</li>
+						          	</ul>
+						          </div>
+							    </div>
+
+							    
+						        
+						        <div class="form-actions">
+						            <button type="submit" class="btn btn-primary">Update Event</button>
+						        </div>
+						        
+						        
+						        
+						        
+						          
+							</fieldset>
+						</form>
 		   		</div><!-- row -->
-			     
-			     <table class="table table-striped">
-			     	<thead>
-					    <tr>
-					      <th>Offer</th>
-					      <th>Description</th>
-					      <th>Status</th>
-					      <th></th>
-					    </tr>
-					</thead>
-					<tbody>
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					    
-					    <tr>
-					      <td>60% Off Flying Private</td>
-					      <td>Fly Private for as little as $3,000/hr.</td>
-					      <td>Active</td>
-					      <td><a href="./admin-offers-edit.html">details</a></td>
-					    </tr>
-					</tbody>
-			     </table>
-			     
-			     <div class="pagination">
-					  <ul>
-					    <li><a href="#">Prev</a></li>
-					    <li class="active"><a href="#">1</a></li>
-					    <li><a href="#">2</a></li>
-					    <li><a href="#">3</a></li>
-					    <li><a href="#">4</a></li>
-					    <li class="disabled"><a href="#">...</a></li>
-					    <li><a href="#">109</a></li>
-					    <li><a href="#">110</a></li>
-					    <li><a href="#">Next</a></li>
-					  </ul>
-				  </div><!-- pagination -->
-    		
+		   		
+		   		
     		</div> <!-- span10 -->
     	</div> <!-- row -->
 
@@ -189,7 +244,7 @@
 			<div id="new-event" class="modal hide fade" style="display: none; ">
               <div class="modal-header">
                 <a href="#" class="close" data-dismiss="modal">×</a>
-                <h3>New Event</h3>
+                <h3>New Message</h3>
               </div>
               <div class="modal-body">
                <form class="form-horizontal">

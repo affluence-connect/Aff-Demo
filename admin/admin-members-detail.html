@@ -13,7 +13,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     
     <style type="text/css">
@@ -41,17 +41,11 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="./index.html">Affluence</a>
+          
           <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="./paid/home.html">Home</a></li>
-              <li><a href="./paid/events.html">Events</a></li>
-              <li><a href="./paid/offers.html">Offers</a></li>
-              <li><a href="./paid/gives.html">Gives</a></li>
-            </ul>  
-                       
-            <ul class="nav pull-right">
+         	<ul class="nav pull-right">
             	
-	            <li class="dropdown active" id="menu1">
+	            <li class="dropdown" id="menu1">
 	              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">Account <b class="caret"></b></a>
 	              
 	              <ul class="dropdown-menu">
@@ -64,60 +58,39 @@
 	              
 	            </li>
          	 </ul>
-            
-          </div><!--/.nav-collapse -->
+		    
+		  </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-    
-<!-- -------------------------------------
-	End Navigation 
-	-------------------------------------- -->
-	
-	
-<!-- -------------------------------------
-	Start Body
-	-------------------------------------- -->
 
     <div class="container">
-    
-    <div class="row">
-    
-    	<div class="span3">
-    		<div class="well">
-    		<ul class="nav nav-list">
-    			<li class="nav-header">Account Settings</li>
-    			<li class="active">
-    				<a href="./settings.html"><i class="icon-home"></i>Profile Info</a>
-    			</li>
-    			<li>
-    				<a href="./settings.html"><i class="icon-shopping-cart"></i>Billing Info</a>
-    			</li>
-    			<li>
-    				<a href="./settings.html"><i class="icon-envelope"></i>Notifications</a>
-    			</li>
-    			<li>
-    				<a href="./settings.html"><i class="icon-lock"></i>Change Password</a>
-    			</li>
-    			
-    			<li class="nav-header">Privacy Settings</li>
-    			<li>
-    				<a href="./privacy.html"><i class="icon-lock"></i>Privacy</a>
-    			</li>
-    			
-    			<li class="nav-header">Order History</li>
-    			<li>
-      				<a href="./orders.html"><i class="icon-gift"></i>Orders</a>
-    			</li>
-    			
-    		</ul>
-    		</div>
-    	</div><!-- span3 -->
-    	
-    	<div class="span9">
-    	
-    	
-    	<div class="accordion" id="accordion2">
+    	<div class="row">
+    		<div class="span2">
+	    		<div class="well">
+		    		<ul class="nav nav-list">
+		    			<li class="nav-header">Admin</li>
+		    			<li>
+		    				<a href="./home.html"><i class="icon-home"></i>Home</a>
+		    			</li>
+		    			<li class="active">
+		    				<a href="./admin-members.html"><i class="icon-user"></i>Members</a>
+		    			</li>
+		    			<li>
+		    				<a href="./admin-events.html"><i class="icon-asterisk"></i>Events</a>
+		    			</li>
+		    			<li>
+		    				<a href="./admin-offers.html"><i class="icon-gift"></i>Offers</a>
+		    			</li>
+		    		</ul>	
+	    		</div> <!-- well -->
+    		</div><!-- span3 -->
+    		
+    		<div class="span10">
+    			<h2>Joe Smith</h2>
+	    		<hr class="zero">
+	    		
+	    		<div class="accordion" id="accordion2">
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
@@ -125,7 +98,7 @@
                 </a>
               </div> <!-- according-heading -->
               
-              <div id="collapseOne" class="accordion-body in collapse" style="height: auto; ">
+              <div id="collapseOne" class="accordion-body collapse" style="height: 0px; ">
                 <div class="accordion-inner">
                 	<div id="profile"> 
    			
@@ -444,15 +417,6 @@
 			   				<fieldset>
 							    
 							    <div class="control-group">  
-						          <label class="control-label" for="input05">Current Password</label>
-							      <div class="controls">
-							        <input type="text" class="input span3" placeholder="">
-							      </div>
-							    </div>
-							    
-							    <hr>
-							    
-							    <div class="control-group">  
 						          <label class="control-label" for="input05">New Password</label>
 							      <div class="controls">
 							        <input type="text" class="input span3" placeholder="">
@@ -479,33 +443,155 @@
          </div> <!-- accordion-body -->
     </div> <!-- accordion-group -->
     
+    <div class="accordion-group">
+    	<div class="accordion-heading">
+	        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+	          <h3>Order History</h3>
+	        </a>
+	     </div>
+         <div id="collapseFive" class="accordion-body collapse" style="height: 0px; ">
+         	<div class="accordion-inner">
+    
+	   			<div id="Orders"> 
+					  <table class="table table-striped">
+				        <thead>
+				          <tr>
+				            <th>#</th>
+				            <th>Date</th>
+				            <th>Purchased</th>
+				            <th>Details</th>
+				            <th>Cost</th>
+				          </tr>
+				        </thead>
+				        <tbody>
+				          <tr>
+				            <td>1</td>
+				            <td>01/24/2012</td>
+				            <td><span class="label label-success">Event</span> Grammy's Weekend</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td>$1,899.99</td>
+				          </tr>
+				          <tr>
+				            <td>2</td>
+				            <td>01/01/2012</td>
+				            <td><span class="label label-info">Due's</span> Monthly Membership Fee</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td>$45.00</td>
+				          </tr>
+				          <tr>
+				            <td>2</td>
+				            <td>12/01/2011</td>
+				            <td><span class="label label-info">Due's</span> Monthly Membership Fee</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td>$45.00</td>
+				          </tr>
+				          <tr>
+				            <td>1</td>
+				            <td>12/18/2012</td>
+				            <td><span class="label label-success">Event</span> Dinner with the President</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td>$2,897.00</td>
+				          </tr>
+				          <tr>
+				            <td>2</td>
+				            <td>11/01/2011</td>
+				            <td><span class="label label-info">Due's</span> Monthly Membership Fee</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td>$45.00</td>
+				          </tr>
+				        </tbody>
+				      </table>
+		   			</div>
+   			
+   			</div> <!-- accordion-inner -->
+         </div> <!-- accordion-body -->
+    </div> <!-- accordion-group -->
+    
+    <div class="accordion-group">
+    	<div class="accordion-heading">
+	        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
+	          <h3>Concierge History</h3>
+	        </a>
+	     </div>
+         <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
+         	<div class="accordion-inner">
+    
+	   			<div id="Concierge"> 
+					  <table class="table table-striped">
+				        <thead>
+				          <tr>
+				            <th>#</th>
+				            <th>Date</th>
+				            <th>Request</th>
+				            <th>Details</th>
+				            <th>Status</th>
+				          </tr>
+				        </thead>
+				        <tbody>
+				          <tr>
+				            <td>1</td>
+				            <td>01/24/2012</td>
+				            <td>Book a table at Girl and the Goat</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td><i class="icon-question-sign icon-green"></i> Pending</td>
+				          </tr>
+				          <tr>
+				            <td>2</td>
+				            <td>01/20/2012</td>
+				            <td>Book Plane Ticket to Savanah</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td><i class="icon-ok-sign icon-green"></i> Compete</td>
+				          </tr>
+				          <tr>
+				            <td>3</td>
+				            <td>01/05/12</td>
+				            <td>Make Doctor Appointment on Jan 14th</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td><i class="icon-ok-sign icon-green"></i> Complete</td>
+				          </tr>
+				          <tr>
+				            <td>4</td>
+				            <td>01/24/2012</td>
+				            <td>Book a table at Girl and the Goat</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td><i class="icon-question-sign icon-green"></i> Pending</td>
+				          </tr>
+				          <tr>
+				            <td>5</td>
+				            <td>01/20/2012</td>
+				            <td>Book Plane Ticket to Savanah</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td><i class="icon-ok-sign icon-green"></i> Compete</td>
+				          </tr>
+				          <tr>
+				            <td>6</td>
+				            <td>01/05/12</td>
+				            <td>Make Doctor Appointment on Jan 14th</td>
+				            <td><a href="#" rel="popover" data-content="table is to be booked between 7-8pm for a party of 4.  Confirmation will be sent via phone call.">Details</a></td>
+				            <td><i class="icon-ok-sign icon-green"></i> Complete</td>
+				          </tr>
+				        </tbody>
+				      </table>
+   			
+   			</div> <!-- accordion-inner -->
+         </div> <!-- accordion-body -->
+    </div> <!-- accordion-group -->
+    
   </div> <!-- accordian -->
-   		
-   		
-    	
-    	</div><!-- span9 -->
-    	
-	</div> <!-- row -->
+    		
+    		</div> <!-- span10 -->
+    	</div> <!-- row -->
 
-<!-- -------------------------------------
-	End Body 
-	-------------------------------------- -->
-	
-	  <footer>
+   
+
+      <hr>
+
+      <footer>
         <p>&copy; Company 2012</p>
       </footer>
 
-      <hr>
-<!-- Modals
-    ================================================== -->      
-   
-          
-
-
-
     </div> <!-- /container -->
-    
-    
+  
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -525,13 +611,14 @@
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
-    
-    <script>
+  	
+  	    <script>
             $(function () {
-              $('#myCarousel').carousel()
+              $('a[rel=tooltip]').tooltip({
+              	live: true
+              })
             })
           </script>
-  
      
   </body>
 </html>
